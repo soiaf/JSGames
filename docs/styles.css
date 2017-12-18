@@ -1,0 +1,26 @@
+	
+	table
+	{
+		table-layout: fixed;
+		width: 80%;
+		margin: auto;
+	}
+	
+	td:nth-child(1)
+	{
+		width: 25%;
+	}
+	td:nth-child(2)
+	{
+		width: 75%;
+	} 
+	
+	tr:nth-child(even) 
+	{
+		background-color: #f2f2f2;
+	}
+	
+	tr:hover {background-color: #ddd;}
+	  
+
+	 

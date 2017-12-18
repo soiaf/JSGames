@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="UTF-8"> 
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Nine Letter Word</title>
+
+<script src="nineletterword.js"> </script>
+
+  </head>
+
+  <body onload="myinit()">
+
+<div class="centered">
+<table>
+<tr>
+<td id="b1" onmousedown="playerChoice('1');" class="boardbutton" > </td>
+<td id="b2" onmousedown="playerChoice('2');" class="boardbutton" > </td>
+<td id="b3" onmousedown="playerChoice('3');" class="boardbutton" > </td>
+</tr>
+<tr>
+<td id="b4" onmousedown="playerChoice('4');" class="boardbutton" > </td>
+<td id="b5" onmousedown="playerChoice('5');" class="boardbutton" > </td>
+<td id="b6" onmousedown="playerChoice('6');" class="boardbutton" > </td>
+</tr>
+<tr>
+<td id="b7" onmousedown="playerChoice('7');" class="boardbutton" > </td>
+<td id="b8" onmousedown="playerChoice('8');" class="boardbutton" > </td>
+<td id="b9" onmousedown="playerChoice('9');" class="boardbutton" > </td>
+</tr>
+</table>
+</div>
+
+<div class="centered">
+<table><tr><td class="guesstablecell" id="guessbox"> </td></tr></table> 
+</div>
+
+<div class="centered">
+<table>
+<tr>
+<td class="functionbutton" onmousedown="resetBoard();" >Reset</td>
+<td class="functionbutton" onmousedown="giveup();" >Give up</td>
+</tr>
+<tr>
+<td colspan="2" class="functionbutton" onmousedown="getHint();" >Get Hint</td> 
+</tr>
+</table>
+</div>
+
+
+<div class="centered">
+<textarea id="infobox" cols="30" rows="4">&nbsp;</textarea> 
+</div>
+
+<div class="centered">
+<table>
+<tr>
+<td class="newgamecell" id="newgamebutton" >
+<button class="newgamebutton" onmousedown='playAgain();' >New Game</button>
+</td>
+</tr>
+</table>
+</div>
+
+
+  </body>
+</html>

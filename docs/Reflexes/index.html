@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Reflexes</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<script src="Reflexes.js" ></script>
+</head>
+<body onload="myinit()">
+<div class="centered">
+
+ 
+<table>
+	<tr>
+		<td class="mytablecell" id="pos_1" onmousedown="myselect(1);">&nbsp;</td>
+		<td class="mytablecell" id="pos_2" onmousedown="myselect(2);">&nbsp;</td>
+		<td class="mytablecell" id="pos_3" onmousedown="myselect(3);">&nbsp;</td>
+		<td class="mytablecell" id="pos_4" onmousedown="myselect(4);">&nbsp;</td>
+		<td class="mytablecell" id="pos_5" onmousedown="myselect(5);">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="mytablecell" id="pos_6" onmousedown="myselect(6);">&nbsp;</td>
+		<td class="mytablecell" id="pos_7" onmousedown="myselect(7);">&nbsp;</td>
+		<td class="mytablecell" id="pos_8" onmousedown="myselect(8);">&nbsp;</td>
+		<td class="mytablecell" id="pos_9" onmousedown="myselect(9);">&nbsp;</td>
+		<td class="mytablecell" id="pos_10" onmousedown="myselect(10);">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="mytablecell" id="pos_11" onmousedown="myselect(11);">&nbsp;</td>
+		<td class="mytablecell" id="pos_12" onmousedown="myselect(12);">&nbsp;</td>
+		<td class="mytablecell" id="pos_13" onmousedown="myselect(13);">&nbsp;</td>
+		<td class="mytablecell" id="pos_14" onmousedown="myselect(14);">&nbsp;</td>
+		<td class="mytablecell" id="pos_15" onmousedown="myselect(15);">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="mytablecell" id="pos_16" onmousedown="myselect(16);">&nbsp;</td>
+		<td class="mytablecell" id="pos_17" onmousedown="myselect(17);">&nbsp;</td>
+		<td class="mytablecell" id="pos_18" onmousedown="myselect(18);">&nbsp;</td>
+		<td class="mytablecell" id="pos_19" onmousedown="myselect(19);">&nbsp;</td>
+		<td class="mytablecell" id="pos_20" onmousedown="myselect(20);">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="mytablecell" id="pos_21" onmousedown="myselect(21);">&nbsp;</td>
+		<td class="mytablecell" id="pos_22" onmousedown="myselect(22);">&nbsp;</td>
+		<td class="mytablecell" id="pos_23" onmousedown="myselect(23);">&nbsp;</td>
+		<td class="mytablecell" id="pos_24" onmousedown="myselect(24);">&nbsp;</td>
+		<td class="mytablecell" id="pos_25" onmousedown="myselect(25);">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="mytablecell" id="pos_26" onmousedown="myselect(26);">&nbsp;</td>
+		<td class="mytablecell" id="pos_27" onmousedown="myselect(27);">&nbsp;</td>
+		<td class="mytablecell" id="pos_28" onmousedown="myselect(28);">&nbsp;</td>
+		<td class="mytablecell" id="pos_29" onmousedown="myselect(29);">&nbsp;</td>
+		<td class="mytablecell" id="pos_30" onmousedown="myselect(30);">&nbsp;</td>
+	</tr>
+</table>
+</div>
+
+<div class="centered">
+Rabbits =<span id="score">0</span> &nbsp;|&nbsp; Time=<span id="time">0</span> secs
+<br /><span id="besttimedetails">Best Time=<span id="besttime">50</span> secs</span>
+</div>
+
+<div class="centered">
+<table>
+<tr>
+<td class="newgamecell" id="newgamebutton" >
+<button class="newgamebutton" onmousedown='playAgain();' >New Game</button>
+</td>
+</tr>
+</table>
+</div>
+
+</body>
+</html>
+

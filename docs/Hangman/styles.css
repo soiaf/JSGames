@@ -1,0 +1,42 @@
+      body { 
+	text-align: center;
+	background-color: #eeeeee;
+      }
+
+    div.centered 
+    {
+        text-align: center;
+    }
+    div.centered table 
+    {
+        margin: 0 auto; 
+
+    }
+	
+	#letters
+	{
+		border: 0;
+		border-spacing: 2px; 
+	}
+
+    .keyboardbutton
+    {
+        height:16px;
+        width:17px;
+        font-weight:900;
+        font-family:"Comic Sans MS",Arial,Verdana;
+        text-align: center;
+    }
+
+    table{}
+    .spacercell {
+        height:9px;
+      }
+
+    table{}
+    .hintcell {
+        height:60px;
+	  width:160px;
+        font-size:9pt;
+
+      }

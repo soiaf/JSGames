@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TicTacToe</title>
+	<meta charset="UTF-8"> 
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="tictactoe.js" ></script>
+  </head>
+
+  <body onload="myinit()">
+
+  
+<div class="centered">
+<table id="mainboard">
+<tr>
+<td id="b1" onmousedown="playerChoice('1');" class="boardbutton"> </td>
+<td id="b2" onmousedown="playerChoice('2');" class="boardbutton"> </td>
+<td id="b3" onmousedown="playerChoice('3');" class="boardbutton"> </td>
+</tr>
+<tr>
+<td id="b4" onmousedown="playerChoice('4');" class="boardbutton"> </td>
+<td id="b5" onmousedown="playerChoice('5');" class="boardbutton"> </td>
+<td id="b6" onmousedown="playerChoice('6');" class="boardbutton"> </td>
+</tr>
+<tr>
+<td id="b7" onmousedown="playerChoice('7');" class="boardbutton"> </td>
+<td id="b8" onmousedown="playerChoice('8');" class="boardbutton"> </td>
+<td id="b9" onmousedown="playerChoice('9');" class="boardbutton"> </td>
+</tr>
+</table>
+</div>
+
+<div class="centered">
+<table id="noticesection"><tr><td class="mynoticetablecell" id="infobox">&nbsp;</td></tr></table> 
+</div>
+
+<div class="centered">
+<table>
+<tr>
+<td class="newgamecell" id="newgamebutton" >
+<button class="newgamebutton" onmousedown='playAgain();' >New Game</button>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="centered">
+Won <span id="won">0</span> &nbsp;|&nbsp; Lost <span id="lost">0</span>
+<br />Draws <span id="draws">0</span>
+</div>
+
+
+
+  </body>
+</html>

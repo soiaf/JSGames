@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>Minesweeper</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="minesweeper.js" ></script>
+
+  </head>
+
+  <body onload="myinit()" >
+
+<div class="centered">
+
+<table>
+
+<tr>
+<td id="left1" class="notificationtablecell"> </td>
+<td class="mytablecell" id="a65" onclick="playMove('65');" oncontextmenu="playMoveRightClick('65'); return false;"></td>
+<td class="mytablecell" id="a66" onclick="playMove('66');" oncontextmenu="playMoveRightClick('66'); return false;"></td>
+<td class="mytablecell" id="a67" onclick="playMove('67');" oncontextmenu="playMoveRightClick('67'); return false;"></td>
+<td class="mytablecell" id="a68" onclick="playMove('68');" oncontextmenu="playMoveRightClick('68'); return false;"></td>
+<td class="mytablecell" id="a69" onclick="playMove('69');" oncontextmenu="playMoveRightClick('69'); return false;"></td>
+<td class="mytablecell" id="a70" onclick="playMove('70');" oncontextmenu="playMoveRightClick('70'); return false;"></td>
+<td class="mytablecell" id="a71" onclick="playMove('71');" oncontextmenu="playMoveRightClick('71'); return false;"></td>
+<td class="mytablecell" id="a72" onclick="playMove('72');" oncontextmenu="playMoveRightClick('72'); return false;"></td>
+<td id="right1" class="notificationtablecell"> </td>
+</tr>
+
+<tr>
+<td id="left2" class="notificationtablecell"> </td>
+<td class="mytablecell" id="a57" onclick="playMove('57');" oncontextmenu="playMoveRightClick('57'); return false;"></td>
+<td class="mytablecell" id="a58" onclick="playMove('58');" oncontextmenu="playMoveRightClick('58'); return false;"></td>
+<td class="mytablecell" id="a59" onclick="playMove('59');" oncontextmenu="playMoveRightClick('59'); return false;"></td>
+<td class="mytablecell" id="a60" onclick="playMove('60');" oncontextmenu="playMoveRightClick('60'); return false;"></td>
+<td class="mytablecell" id="a61" onclick="playMove('61');" oncontextmenu="playMoveRightClick('61'); return false;"></td>
+<td class="mytablecell" id="a62" onclick="playMove('62');" oncontextmenu="playMoveRightClick('62'); return false;"></td>
+<td class="mytablecell" id="a63" onclick="playMove('63');" oncontextmenu="playMoveRightClick('63'); return false;"></td>
+<td class="mytablecell" id="a64" onclick="playMove('64');" oncontextmenu="playMoveRightClick('64'); return false;"></td>
+<td id="right2" class="notificationtablecell"> </td>
+</tr>
+
+<tr>
+<td id="left3" class="notificationtablecell"> </td>
+<td class="mytablecell" id="a49" onclick="playMove('49');" oncontextmenu="playMoveRightClick('49'); return false;"></td>
+<td class="mytablecell" id="a50" onclick="playMove('50');" oncontextmenu="playMoveRightClick('50'); return false;"></td>
+<td class="mytablecell" id="a51" onclick="playMove('51');" oncontextmenu="playMoveRightClick('51'); return false;"></td>
+<td class="mytablecell" id="a52" onclick="playMove('52');" oncontextmenu="playMoveRightClick('52'); return false;"></td>
+<td class="mytablecell" id="a53" onclick="playMove('53');" oncontextmenu="playMoveRightClick('53'); return false;"></td>
+<td class="mytablecell" id="a54" onclick="playMove('54');" oncontextmenu="playMoveRightClick('54'); return false;"></td>
+<td class="mytablecell" id="a55" onclick="playMove('55');" oncontextmenu="playMoveRightClick('55'); return false;"></td>
+<td class="mytablecell" id="a56" onclick="playMove('56');" oncontextmenu="playMoveRightClick('56'); return false;"></td>
+<td id="right3" class="notificationtablecell"> </td>
+</tr>
+
+<tr>
+<td id="left4" class="notificationtablecell"> </td>
+<td class="mytablecell" id="a41" onclick="playMove('41');" oncontextmenu="playMoveRightClick('41'); return false;"></td>
+<td class="mytablecell" id="a42" onclick="playMove('42');" oncontextmenu="playMoveRightClick('42'); return false;"></td>
+<td class="mytablecell" id="a43" onclick="playMove('43');" oncontextmenu="playMoveRightClick('43'); return false;"></td>
+<td class="mytablecell" id="a44" onclick="playMove('44');" oncontextmenu="playMoveRightClick('44'); return false;"></td>
+<td class="mytablecell" id="a45" onclick="playMove('45');" oncontextmenu="playMoveRightClick('45'); return false;"></td>
+<td class="mytablecell" id="a46" onclick="playMove('46');" oncontextmenu="playMoveRightClick('46'); return false;"></td>
+<td class="mytablecell" id="a47" onclick="playMove('47');" oncontextmenu="playMoveRightClick('47'); return false;"></td>
+<td class="mytablecell" id="a48" onclick="playMove('48');" oncontextmenu="playMoveRightClick('48'); return false;"></td>
+<td id="right4" class="notificationtablecell"> </td>
+</tr>
+
+<tr>
+<td id="left5" class="notificationtablecell"> </td>
+<td class="mytablecell" id="a33" onclick="playMove('33');" oncontextmenu="playMoveRightClick('33'); return false;"></td>
+<td class="mytablecell" id="a34" onclick="playMove('34');" oncontextmenu="playMoveRightClick('34'); return false;"></td>
+<td class="mytablecell" id="a35" onclick="playMove('35');" oncontextmenu="playMoveRightClick('35'); return false;"></td>
+<td class="mytablecell" id="a36" onclick="playMove('36');" oncontextmenu="playMoveRightClick('36'); return false;"></td>
+<td class="mytablecell" id="a37" onclick="playMove('37');" oncontextmenu="playMoveRightClick('37'); return false;"></td>
+<td class="mytablecell" id="a38" onclick="playMove('38');" oncontextmenu="playMoveRightClick('38'); return false;"></td>
+<td class="mytablecell" id="a39" onclick="playMove('39');" oncontextmenu="playMoveRightClick('39'); return false;"></td>
+<td class="mytablecell" id="a40" onclick="playMove('40');" oncontextmenu="playMoveRightClick('40'); return false;"></td>
+<td id="right5" class="notificationtablecell"> </td>
+</tr>
+
+
+<tr>
+<td id="left6" class="notificationtablecell"> </td>
+<td class="mytablecell" id="a25" onclick="playMove('25');" oncontextmenu="playMoveRightClick('25'); return false;"></td>
+<td class="mytablecell" id="a26" onclick="playMove('26');" oncontextmenu="playMoveRightClick('26'); return false;"></td>
+<td class="mytablecell" id="a27" onclick="playMove('27');" oncontextmenu="playMoveRightClick('27'); return false;"></td>
+<td class="mytablecell" id="a28" onclick="playMove('28');" oncontextmenu="playMoveRightClick('28'); return false;"></td>
+<td class="mytablecell" id="a29" onclick="playMove('29');" oncontextmenu="playMoveRightClick('29'); return false;"></td>
+<td class="mytablecell" id="a30" onclick="playMove('30');" oncontextmenu="playMoveRightClick('30'); return false;"></td>
+<td class="mytablecell" id="a31" onclick="playMove('31');" oncontextmenu="playMoveRightClick('31'); return false;"></td>
+<td class="mytablecell" id="a32" onclick="playMove('32');" oncontextmenu="playMoveRightClick('32'); return false;"></td>
+<td id="right6" class="notificationtablecell"> </td>
+</tr>
+
+<tr>
+<td id="left7" class="notificationtablecell"> </td>
+<td class="mytablecell" id="a17" onclick="playMove('17');" oncontextmenu="playMoveRightClick('17'); return false;"></td>
+<td class="mytablecell" id="a18" onclick="playMove('18');" oncontextmenu="playMoveRightClick('18'); return false;"></td>
+<td class="mytablecell" id="a19" onclick="playMove('19');" oncontextmenu="playMoveRightClick('19'); return false;"></td>
+<td class="mytablecell" id="a20" onclick="playMove('20');" oncontextmenu="playMoveRightClick('20'); return false;"></td>
+<td class="mytablecell" id="a21" onclick="playMove('21');" oncontextmenu="playMoveRightClick('21'); return false;"></td>
+<td class="mytablecell" id="a22" onclick="playMove('22');" oncontextmenu="playMoveRightClick('22'); return false;"></td>
+<td class="mytablecell" id="a23" onclick="playMove('23');" oncontextmenu="playMoveRightClick('23'); return false;"></td>
+<td class="mytablecell" id="a24" onclick="playMove('24');" oncontextmenu="playMoveRightClick('24'); return false;"></td>
+<td id="right7" class="notificationtablecell"> </td>
+</tr>
+
+
+<tr>
+<td id="left8" class="notificationtablecell"> </td>
+<td class="mytablecell" id="a9" onclick="playMove('9');" oncontextmenu="playMoveRightClick('9'); return false;"></td>
+<td class="mytablecell" id="a10" onclick="playMove('10');" oncontextmenu="playMoveRightClick('10'); return false;"></td>
+<td class="mytablecell" id="a11" onclick="playMove('11');" oncontextmenu="playMoveRightClick('11'); return false;"></td>
+<td class="mytablecell" id="a12" onclick="playMove('12');" oncontextmenu="playMoveRightClick('12'); return false;"></td>
+<td class="mytablecell" id="a13" onclick="playMove('13');" oncontextmenu="playMoveRightClick('13'); return false;"></td>
+<td class="mytablecell" id="a14" onclick="playMove('14');" oncontextmenu="playMoveRightClick('14'); return false;"></td>
+<td class="mytablecell" id="a15" onclick="playMove('15');" oncontextmenu="playMoveRightClick('15'); return false;"></td>
+<td class="mytablecell" id="a16" onclick="playMove('16');" oncontextmenu="playMoveRightClick('16'); return false;"></td>
+<td id="right8" class="notificationtablecell"> </td>
+</tr>
+
+<tr>
+<td id="left9" class="notificationtablecell"> </td>
+<td class="mytablecell" id="a1" onclick="playMove('1');" oncontextmenu="playMoveRightClick('1'); return false;"></td>
+<td class="mytablecell" id="a2" onclick="playMove('2');" oncontextmenu="playMoveRightClick('2'); return false;"></td>
+<td class="mytablecell" id="a3" onclick="playMove('3');" oncontextmenu="playMoveRightClick('3'); return false;"></td>
+<td class="mytablecell" id="a4" onclick="playMove('4');" oncontextmenu="playMoveRightClick('4'); return false;"></td>
+<td class="mytablecell" id="a5" onclick="playMove('5');" oncontextmenu="playMoveRightClick('5'); return false;"></td>
+<td class="mytablecell" id="a6" onclick="playMove('6');" oncontextmenu="playMoveRightClick('6'); return false;"></td>
+<td class="mytablecell" id="a7" onclick="playMove('7');" oncontextmenu="playMoveRightClick('7'); return false;"></td>
+<td class="mytablecell" id="a8" onclick="playMove('8');" oncontextmenu="playMoveRightClick('8'); return false;"></td>
+<td id="right9" class="notificationtablecell"> </td>
+</tr>
+
+
+</table>
+</div>
+
+<div class="centered" id="changeactionsection">
+<table>
+<tr>
+<td class="newgamecell" id="swapbutton" >
+<button class="cssactionbutton" onclick='alternateAction();' >Change Action</button>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="controlscentered">
+<table>
+<tr>
+<td id="swaptext">clear square</td>
+</tr>
+</table>
+</div>
+
+<div class="centered">
+<table>
+<tr>
+<td class="newgamecell" id="newgamebutton" >
+<button class="cssactionbutton" onclick='playAgain();' >New Game</button>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="centered">
+Time <span id="gametime">0</span> secs &nbsp;|&nbsp; Best <span id="besttime">9999</span> secs
+</div>
+
+
+  </body>
+</html>

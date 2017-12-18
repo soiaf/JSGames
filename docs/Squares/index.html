@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html id="main">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Sliding Squares</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="SlidingSquares.js" ></script>
+
+  </head>
+
+  <body onload="myinit()">
+
+<div class="centered">
+
+  <table>
+     <tr><td class="mycell"><img onmousedown='move(0);' src="nums/number1.png" id="pos0" alt="square 1" /></td>
+       <td class="mycell"><img onmousedown='move(1);' src="nums/number2.png" id="pos1" alt="square 2" /></td>
+       <td class="mycell"><img onmousedown='move(2);' src="nums/number3.png" id="pos2" alt="square 3" /></td>
+       <td class="mycell"><img onmousedown='move(3);' src="nums/number4.png" id="pos3" alt="square 4" /></td></tr>
+     <tr>
+       <td class="mycell"><img onmousedown='move(4);' src="nums/number5.png" id="pos4" alt="square 5" /></td>
+       <td class="mycell"><img onmousedown='move(5);' src="nums/number6.png" id="pos5" alt="square 6" /></td>
+       <td class="mycell"><img onmousedown='move(6);' src="nums/number7.png" id="pos6" alt="square 7" /></td>
+       <td class="mycell"><img onmousedown='move(7);' src="nums/number8.png" id="pos7" alt="square 8" /></td></tr>
+     <tr>
+       <td class="mycell"><img onmousedown='move(8);' src="nums/number9.png" id="pos8" alt="square 9" /></td>
+       <td class="mycell"><img onmousedown='move(9);' src="nums/number10.png" id="pos9" alt="square 10" /></td>
+       <td class="mycell"><img onmousedown='move(10);' src="nums/number11.png" id="pos10" alt="square 11" /></td>
+      <td class="mycell"><img onmousedown='move(11);' src="nums/number12.png" id="pos11" alt="square 12" /></td>
+    </tr>
+    <tr>
+      <td class="mycell"><img onmousedown='move(12);' src="nums/number13.png" id="pos12" alt="square 13" /></td>
+      <td class="mycell"><img onmousedown='move(13);' src="nums/number14.png" id="pos13" alt="square 14" /></td>
+      <td class="mycell"><img onmousedown='move(14);' src="nums/number15.png" id="pos14" alt="square 15" /></td>
+      <td class="mycell"><img onmousedown='move(15);' src="nums/hole.png" id="pos15" alt="square 16" /></td>
+    </tr>
+   </table>
+   </div>
+   
+   
+<div class="centered">
+  <table >   
+    <tr>
+      <td class="spacercell"></td>
+      <td class="spacercell"></td>
+      <td class="spacercell"></td>
+      <td class="spacercell"></td>
+   </tr>
+  </table>
+
+</div>
+
+<div class="centered">
+<table>
+<tr>
+<td class="scramblecell" id="scramblebutton" >
+<button class="scramblebutton" onmousedown='scrambleBoard();' >Shuffle Board</button>
+</td>
+</tr>
+</table>
+</div>
+
+
+
+  </body>
+</html>
