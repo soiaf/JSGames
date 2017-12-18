@@ -5,6 +5,11 @@ _All Rights Reserved. Distributed under the BSD Software License (see license.tx
 
 This is a collection of HTML/JavaScript games that I originally wrote as widgets for mobile phones but have updated to make available for normal web browsers.
 
+You can try the various games here
+
+https://soiaf.github.io/JSGames/
+
+
 ### 9 Letter Word
 
 In this game the player is presented with a 3x3 grid. In each box is a letter. Using all the letters a nine letter word can be made. Click on each letter in the order you think it is in the word.
