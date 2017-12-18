@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html id="main">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>Hangman</title>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<script src="hangman.js" ></script>
+
+  </head>
+
+  <body onload="playAgain()">
+
+<div class="centered" id="hangmanimage">
+<img src="0.gif" alt="" />
+</div>
+
+<div class="centered" id="wordguess">
+_ _ _ _ _
+</div>
+
+<div class="centered">
+<table id="letters">
+<tr>
+<td class="spacercell"></td>
+<td class="spacercell"></td>
+<td class="spacercell"></td>
+<td class="spacercell"></td>
+<td class="spacercell"></td>
+<td class="spacercell"></td>
+<td class="spacercell"></td>
+</tr>
+<tr>
+<td id="a1" onclick="playerChoice('1');" class="keyboardbutton" >A</td>
+<td id="a2" onclick="playerChoice('2');" class="keyboardbutton" >B</td>
+<td id="a3" onclick="playerChoice('3');" class="keyboardbutton" >C</td>
+<td id="a4" onclick="playerChoice('4');" class="keyboardbutton" >D</td>
+<td id="a5" onclick="playerChoice('5');" class="keyboardbutton" >E</td>
+<td id="a6" onclick="playerChoice('6');" class="keyboardbutton" >F</td>
+<td id="a7" onclick="playerChoice('7');" class="keyboardbutton" >G</td>
+</tr>
+<tr>
+<td id="a8" onclick="playerChoice('8');" class="keyboardbutton" >H</td>
+<td id="a9" onclick="playerChoice('9');" class="keyboardbutton" >I</td>
+<td id="a10" onclick="playerChoice('10');" class="keyboardbutton" >J</td>
+<td id="a11" onclick="playerChoice('11');" class="keyboardbutton" >K</td>
+<td id="a12" onclick="playerChoice('12');" class="keyboardbutton" >L</td>
+<td id="a13" onclick="playerChoice('13');" class="keyboardbutton" >M</td>
+<td id="a14" onclick="playerChoice('14');" class="keyboardbutton" >N</td>
+</tr>
+<tr>
+
+<td id="a15" onclick="playerChoice('15');" class="keyboardbutton" >O</td>
+<td id="a16" onclick="playerChoice('16');" class="keyboardbutton" >P</td>
+<td id="a17" onclick="playerChoice('17');" class="keyboardbutton" >Q</td>
+<td id="a18" onclick="playerChoice('18');" class="keyboardbutton" >R</td>
+<td id="a19" onclick="playerChoice('19');" class="keyboardbutton" >S</td>
+<td id="a20" onclick="playerChoice('20');" class="keyboardbutton" >T</td>
+<td id="a21" onclick="playerChoice('21');" class="keyboardbutton" >U</td>
+</tr>
+<tr>
+<td></td>
+<td id="a22" onclick="playerChoice('22');" class="keyboardbutton" >V</td>
+<td id="a23" onclick="playerChoice('23');" class="keyboardbutton" >W</td>
+<td id="a24" onclick="playerChoice('24');" class="keyboardbutton" >X</td>
+<td id="a25" onclick="playerChoice('25');" class="keyboardbutton" >Y</td>
+<td id="a26" onclick="playerChoice('26');" class="keyboardbutton" >Z</td>
+<td></td>
+</tr>
+<tr>
+<td class="spacercell"></td>
+<td class="spacercell"></td>
+<td class="spacercell"></td>
+<td class="spacercell"></td>
+<td class="spacercell"></td>
+<td class="spacercell"></td>
+<td class="spacercell"></td>
+</tr>
+</table>
+</div>
+
+
+<div>
+<input type="button" value="New Game" onclick="playAgain();" /> 
+<input type="button" value="Get Hint" onclick="getHint();" />
+
+</div>
+
+<div>
+<select id="difficultylist" onchange="changeDifficulty()"> 
+
+<option value="">Difficulty of words</option>
+<option value="normal"    >Normal</option>
+<option value="hard"      >Hard</option>
+
+</select>
+
+</div>
+
+
+  </body>
+</html>

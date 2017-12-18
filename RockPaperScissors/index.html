@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+	<meta charset="UTF-8"> 
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script src="RockPaperScissors.js" ></script>
+  </head>
+
+<body onload="myinit()">
+<div class="centered">
+
+Player
+<table>
+	<tr>
+		<td class="mytablecell" id="player_rock" onmousedown="myselect(1);"><img src='rock.png' alt="Rock" /></td>
+		<td class="mytablecell" id="player_paper" onmousedown="myselect(2);"><img src='paper.png' alt="Paper" /></td>
+		<td class="mytablecell" id="player_scissors" onmousedown="myselect(3);"><img src='scissors.png' alt="Scissors" /></td>
+	</tr>
+
+</table>
+
+Computer
+<table>
+	<tr>
+		<td class="computertablecell">&nbsp;</td>
+		<td class="computertablecell" id="computer_choice" >Make Your Move!</td>
+		<td class="computertablecell">&nbsp;</td>
+	</tr>
+
+</table>
+
+</div>
+
+
+<div class="centered">
+<table><tr><td class="mynoticetablecell" id="infobox"> </td></tr></table> 
+</div>
+
+<div class="centered">
+Won <span id="won">0</span> &nbsp;|&nbsp; Lost <span id="lost">0</span>
+<br />Draws <span id="draws">0</span>
+</div>
+
+
+</body>
+</html>
+

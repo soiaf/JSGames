@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <title>Four In A Row</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="fourinarow.js" ></script>
+
+  </head>
+
+  <body onload="playAgain()">
+
+<div class="centered">
+
+<table>
+<tr>
+<td class="mytablecell" id="a36" onclick="playerChoice('1');" ></td>
+<td class="mytablecell" id="a37" onclick="playerChoice('2');" ></td>
+<td class="mytablecell" id="a38" onclick="playerChoice('3');" ></td>
+<td class="mytablecell" id="a39" onclick="playerChoice('4');" ></td>
+<td class="mytablecell" id="a40" onclick="playerChoice('5');" ></td>
+<td class="mytablecell" id="a41" onclick="playerChoice('6');" ></td>
+<td class="mytablecell" id="a42" onclick="playerChoice('7');" ></td>
+</tr>
+
+<tr>
+<td class="mytablecell" id="a29" onclick="playerChoice('1');" ></td>
+<td class="mytablecell" id="a30" onclick="playerChoice('2');" ></td>
+<td class="mytablecell" id="a31" onclick="playerChoice('3');" ></td>
+<td class="mytablecell" id="a32" onclick="playerChoice('4');" ></td>
+<td class="mytablecell" id="a33" onclick="playerChoice('5');" ></td>
+<td class="mytablecell" id="a34" onclick="playerChoice('6');" ></td>
+<td class="mytablecell" id="a35" onclick="playerChoice('7');" ></td>
+</tr>
+
+<tr>
+<td class="mytablecell" id="a22" onclick="playerChoice('1');" ></td>
+<td class="mytablecell" id="a23" onclick="playerChoice('2');" ></td>
+<td class="mytablecell" id="a24" onclick="playerChoice('3');" ></td>
+<td class="mytablecell" id="a25" onclick="playerChoice('4');" ></td>
+<td class="mytablecell" id="a26" onclick="playerChoice('5');" ></td>
+<td class="mytablecell" id="a27" onclick="playerChoice('6');" ></td>
+<td class="mytablecell" id="a28" onclick="playerChoice('7');" ></td>
+</tr>
+
+<tr>
+<td class="mytablecell" id="a15" onclick="playerChoice('1');" ></td>
+<td class="mytablecell" id="a16" onclick="playerChoice('2');" ></td>
+<td class="mytablecell" id="a17" onclick="playerChoice('3');" ></td>
+<td class="mytablecell" id="a18" onclick="playerChoice('4');" ></td>
+<td class="mytablecell" id="a19" onclick="playerChoice('5');" ></td>
+<td class="mytablecell" id="a20" onclick="playerChoice('6');" ></td>
+<td class="mytablecell" id="a21" onclick="playerChoice('7');" ></td>
+</tr>
+
+<tr>
+<td class="mytablecell" id="a8" onclick="playerChoice('1');" ></td>
+<td class="mytablecell" id="a9" onclick="playerChoice('2');" ></td>
+<td class="mytablecell" id="a10" onclick="playerChoice('3');" ></td>
+<td class="mytablecell" id="a11" onclick="playerChoice('4');" ></td>
+<td class="mytablecell" id="a12" onclick="playerChoice('5');" ></td>
+<td class="mytablecell" id="a13" onclick="playerChoice('6');" ></td>
+<td class="mytablecell" id="a14" onclick="playerChoice('7');" ></td>
+</tr>
+
+<tr>
+<td class="mytablecell" id="a1" onclick="playerChoice('1');" ></td>
+<td class="mytablecell" id="a2" onclick="playerChoice('2');" ></td>
+<td class="mytablecell" id="a3" onclick="playerChoice('3');" ></td>
+<td class="mytablecell" id="a4" onclick="playerChoice('4');" ></td>
+<td class="mytablecell" id="a5" onclick="playerChoice('5');" ></td>
+<td class="mytablecell" id="a6" onclick="playerChoice('6');" ></td>
+<td class="mytablecell" id="a7" onclick="playerChoice('7');" ></td>
+</tr>
+
+
+</table>
+</div>
+
+<div class="centered">
+<table><tr><td class="mynoticetablecell" id="infobox"> </td></tr></table> 
+</div>
+
+<div class="centered">
+<table>
+<tr>
+<td class="newgamecell" id="newgamebutton" >
+<button class="newgamebutton" onmousedown='playAgain();' >New Game</button>
+</td>
+</tr>
+</table>
+</div>
+
+<div>
+<input type="radio" name="difficulty" onclick="pickDifficulty(this.value)" value="2" checked="checked" />Normal
+&nbsp;
+<input type="radio" name="difficulty" onclick="pickDifficulty(this.value)" value="3" />Hard
+
+</div>
+
+<div class="scorecentered">
+<table>
+<tr>
+<th colspan="5" class="spacercell"></th>
+</tr>
+<tr>
+<td class="myhighscoretablecell" >Games won</td>
+<td class="myhighscoretablecell"><img src="red.gif" height="14" width="17" alt="Player" /></td>
+<td class="myhighscoretablenumberscell" id="playernowscore" >0</td>
+<td class="myhighscoretablecell"><img src="yellow.gif" height="14" width="17" alt="Computer" /></td>
+<td class="myhighscoretablenumberscell" id="computernowscore" >0</td>
+</tr>
+</table>
+</div>
+
+
+  </body>
+</html>

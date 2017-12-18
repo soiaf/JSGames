@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reversi</title>
+	<meta charset="UTF-8"> 
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="reversi.js" ></script>
+
+  </head>
+
+  <body onload="playAgain()" >
+
+<div class="centered">
+
+<table>
+
+<tr>
+<td class="mytablecell" id="a57" onclick="playMove(57)" ></td>
+<td class="mytablecell" id="a58" onclick="playMove(58)" ></td>
+<td class="mytablecell" id="a59" onclick="playMove(59)" ></td>
+<td class="mytablecell" id="a60" onclick="playMove(60)" ></td>
+<td class="mytablecell" id="a61" onclick="playMove(61)" ></td>
+<td class="mytablecell" id="a62" onclick="playMove(62)" ></td>
+<td class="mytablecell" id="a63" onclick="playMove(63)" ></td>
+<td class="mytablecell" id="a64" onclick="playMove(64)" ></td>
+</tr>
+
+<tr>
+<td class="mytablecell" id="a49" onclick="playMove(49)" ></td>
+<td class="mytablecell" id="a50" onclick="playMove(50)" ></td>
+<td class="mytablecell" id="a51" onclick="playMove(51)" ></td>
+<td class="mytablecell" id="a52" onclick="playMove(52)" ></td>
+<td class="mytablecell" id="a53" onclick="playMove(53)" ></td>
+<td class="mytablecell" id="a54" onclick="playMove(54)" ></td>
+<td class="mytablecell" id="a55" onclick="playMove(55)" ></td>
+<td class="mytablecell" id="a56" onclick="playMove(56)" ></td>
+</tr>
+
+<tr>
+<td class="mytablecell" id="a41" onclick="playMove(41)" ></td>
+<td class="mytablecell" id="a42" onclick="playMove(42)" ></td>
+<td class="mytablecell" id="a43" onclick="playMove(43)" ></td>
+<td class="mytablecell" id="a44" onclick="playMove(44)" ></td>
+<td class="mytablecell" id="a45" onclick="playMove(45)" ></td>
+<td class="mytablecell" id="a46" onclick="playMove(46)" ></td>
+<td class="mytablecell" id="a47" onclick="playMove(47)" ></td>
+<td class="mytablecell" id="a48" onclick="playMove(48)" ></td>
+</tr>
+
+<tr>
+<td class="mytablecell" id="a33" onclick="playMove(33)" ></td>
+<td class="mytablecell" id="a34" onclick="playMove(34)" ></td>
+<td class="mytablecell" id="a35" onclick="playMove(35)" ></td>
+<td class="mytablecell" id="a36" onclick="playMove(36)" ></td>
+<td class="mytablecell" id="a37" onclick="playMove(37)" ></td>
+<td class="mytablecell" id="a38" onclick="playMove(38)" ></td>
+<td class="mytablecell" id="a39" onclick="playMove(39)" ></td>
+<td class="mytablecell" id="a40" onclick="playMove(40)" ></td>
+</tr>
+
+
+<tr>
+<td class="mytablecell" id="a25" onclick="playMove(25)" ></td>
+<td class="mytablecell" id="a26" onclick="playMove(26)" ></td>
+<td class="mytablecell" id="a27" onclick="playMove(27)" ></td>
+<td class="mytablecell" id="a28" onclick="playMove(28)" ></td>
+<td class="mytablecell" id="a29" onclick="playMove(29)" ></td>
+<td class="mytablecell" id="a30" onclick="playMove(30)" ></td>
+<td class="mytablecell" id="a31" onclick="playMove(31)" ></td>
+<td class="mytablecell" id="a32" onclick="playMove(32)" ></td>
+</tr>
+
+<tr>
+<td class="mytablecell" id="a17" onclick="playMove(17)" ></td>
+<td class="mytablecell" id="a18" onclick="playMove(18)" ></td>
+<td class="mytablecell" id="a19" onclick="playMove(19)" ></td>
+<td class="mytablecell" id="a20" onclick="playMove(20)" ></td>
+<td class="mytablecell" id="a21" onclick="playMove(21)" ></td>
+<td class="mytablecell" id="a22" onclick="playMove(22)" ></td>
+<td class="mytablecell" id="a23" onclick="playMove(23)" ></td>
+<td class="mytablecell" id="a24" onclick="playMove(24)" ></td>
+</tr>
+
+
+<tr>
+<td class="mytablecell" id="a9" onclick="playMove(9)" ></td>
+<td class="mytablecell" id="a10" onclick="playMove(10)" ></td>
+<td class="mytablecell" id="a11" onclick="playMove(11)" ></td>
+<td class="mytablecell" id="a12" onclick="playMove(12)" ></td>
+<td class="mytablecell" id="a13" onclick="playMove(13)" ></td>
+<td class="mytablecell" id="a14" onclick="playMove(14)" ></td>
+<td class="mytablecell" id="a15" onclick="playMove(15)" ></td>
+<td class="mytablecell" id="a16" onclick="playMove(16)" ></td>
+</tr>
+
+<tr>
+<td class="mytablecell" id="a1" onclick="playMove(1)" ></td>
+<td class="mytablecell" id="a2" onclick="playMove(2)" ></td>
+<td class="mytablecell" id="a3" onclick="playMove(3)" ></td>
+<td class="mytablecell" id="a4" onclick="playMove(4)" ></td>
+<td class="mytablecell" id="a5" onclick="playMove(5)" ></td>
+<td class="mytablecell" id="a6" onclick="playMove(6)" ></td>
+<td class="mytablecell" id="a7" onclick="playMove(7)" ></td>
+<td class="mytablecell" id="a8" onclick="playMove(8)" ></td>
+</tr>
+
+
+</table>
+</div>
+
+<div class="centered">
+<table><tr><td class="mynoticetablecell" id="infobox"> </td></tr></table> 
+</div>
+
+<div>
+<input type="button" value="New Game" onclick="playAgain();" />
+
+</div>
+
+<div>
+<input type="radio" name="difficulty" onclick="pickDifficulty(this.value)" value="0" checked="checked" />Easy
+&nbsp;
+<input type="radio" name="difficulty" onclick="pickDifficulty(this.value)" value="1" />Normal
+&nbsp;
+<input type="radio" name="difficulty" onclick="pickDifficulty(this.value)" value="2" />Hard
+
+</div>
+<div>
+<input type="checkbox" id="showmoves" value="1" />Show possible moves
+</div>
+
+  </body>
+</html>

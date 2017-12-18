@@ -1,0 +1,121 @@
+     body { 
+	text-align: center;
+	background-color: #eeeeee;
+        font-size:9pt;
+        font-family:Comic Sans MS,Arial,Verdana;
+        text-align: center;
+      }
+
+    div.centered 
+    {
+        text-align: center;
+    }
+    div.centered table 
+    {
+        margin: 0 auto;
+        border-spacing: 0;
+    }
+
+    table{}
+    .mytablecell {
+        height:40px;
+        width:40px;
+        font-size:9pt;
+        font-weight:900;
+        font-family:Comic Sans MS,Arial,Verdana;
+        text-align: center;
+        padding:0px;
+        border-width: 1px; 
+        border-style: solid; 
+      }
+    table{}
+    .notificationtablecell {
+        height:20px;
+        width:10px;
+        font-size:9pt;
+        font-weight:900;
+        font-family:Comic Sans MS,Arial,Verdana;
+        text-align: center;
+        padding:0px;
+      }
+
+    img{border:0px;}
+
+    td img 
+    {
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;  
+    }
+
+    div.controlscentered
+    {
+        text-align: center;
+    }
+    div.controlscentered table 
+    {
+       margin: 0 auto;
+    }
+
+    table{}
+    .navtablecell {
+        height:72px;
+        width:72px;
+        font-size:9pt;
+        font-weight:900;
+        font-family:Comic Sans MS,Arial,Verdana;
+        text-align: center;
+        padding:0px;
+      }
+
+    table{}
+    .functiontablecell {
+        height:36px;
+        font-size:4mm;
+        font-family:Comic Sans MS,Arial,Verdana;
+        text-align: center;
+        padding:0px;
+      }
+
+    input{}    
+    .functionbutton
+    {
+        height:4.8mm;
+        font-size:4mm;
+        background: #ffc;
+        font-family:Comic Sans MS,Arial,Verdana;
+        text-align: center;
+    }
+	
+		  
+.cssactionbutton {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 0px solid #121212;
+    border-radius: 15px;
+    background: #5a5a5a;
+    background: -webkit-gradient(linear, left top, left bottom, from(#5a5a5a), to(#121212));
+    background: -moz-linear-gradient(top, #5a5a5a, #121212);
+    background: linear-gradient(to bottom, #5a5a5a, #121212);
+    text-shadow: #090909 1px 1px 1px;
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.cssactionbutton:hover,
+.cssactionbutton:focus {
+    background: #6c6c6c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6c6c6c), to(#161616));
+    background: -moz-linear-gradient(top, #6c6c6c, #161616);
+    background: linear-gradient(to bottom, #6c6c6c, #161616);
+    color: #ffffff;
+    text-decoration: none;
+}
+.cssactionbutton:active {
+    background: #121212;
+    background: -webkit-gradient(linear, left top, left bottom, from(#121212), to(#121212));
+    background: -moz-linear-gradient(top, #121212, #121212);
+    background: linear-gradient(to bottom, #121212, #121212);
+}

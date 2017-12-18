@@ -1,0 +1,53 @@
+	body
+	{
+    font-family: 'Comic Sans MS', Arial, Courier;
+    background-color: #eeeeee;
+	}
+ 
+
+    .mytablecell {
+        height:150px;
+        width:150px;
+	border: solid 1px;
+	border-color: #010088;
+      background-color: palegreen;
+      }
+
+    .computertablecell {
+        height:150px;
+        width:150px;
+      background-color: #eeeeee;
+      }
+
+    img{
+      border:0px;
+      height: 100%;
+      width: 100%;
+    }
+
+    td img 
+    {
+	display: block; 
+	margin-left: auto;
+	margin-right: auto;  
+    }
+
+    div.centered
+    {
+        text-align: center;
+        font-size: 4.8mm;
+    }
+    div.centered table 
+    {
+        margin: 0 auto;
+    }
+
+    .mynoticetablecell {
+        height:4.8mm;
+        width:20mm;
+        background-color: #ffffff;
+        font-size:4.4mm;
+        text-align: center;
+        border-color: #000000;
+
+      }
