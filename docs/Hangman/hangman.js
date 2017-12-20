@@ -247,8 +247,17 @@ function printGuessedLetters()
 function getHint()
 {
 	document.getElementById('hangmanimage').innerHTML = "<table><tr><td class='hintcell'>Please wait. Attempting to get hint for the word.</td></tr></table>";
-
-	var myHostString = "http://api.datamuse.com/words?sp=" + wordToGuess +"&md=d&max=1";
+	
+	// Assume HTTPS connection, change to HTTP is not
+	
+	var myHostString = "https://";
+	
+	if (location.protocol != 'https:')
+	{
+		myHostString = "http://";
+	}
+	
+	myHostString = myHostString + "api.datamuse.com/words?sp=" + wordToGuess +"&md=d&max=1";
 	
 	var xhr = createCORSRequest('GET', myHostString);
 	if (!xhr) 
