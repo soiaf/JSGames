@@ -200,7 +200,16 @@ function getHint()
 {
 	document.getElementById('infobox').innerHTML = "Please wait. Attempting to get hint for the word.";
 
-	var myHostString = "http://api.datamuse.com/words?sp=" + wordToGuess +"&md=d&max=1";
+	// Assume HTTPS connection, change to HTTP is not
+	
+	var myHostString = "https://";
+	
+	if (location.protocol != 'https:')
+	{
+		myHostString = "http://";
+	}
+	
+	myHostString = myHostString + "api.datamuse.com/words?sp=" + wordToGuess +"&md=d&max=1";
 	
 	var xhr = createCORSRequest('GET', myHostString);
 	if (!xhr) 
