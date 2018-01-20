@@ -5,11 +5,6 @@ _All Rights Reserved. Distributed under the BSD Software License (see license.tx
 
 This is a collection of HTML/JavaScript games that I originally wrote as widgets for mobile phones but have updated to make available for normal web browsers.
 
-You can try the various games here
-
-https://soiaf.github.io/JSGames/
-
-
 ### 9 Letter Word
 
 In this game the player is presented with a 3x3 grid. In each box is a letter. Using all the letters a nine letter word can be made. Click on each letter in the order you think it is in the word.
@@ -43,7 +38,7 @@ If you get stuck you can press **Get Hint** to get a dictionary definition of th
 I use _api.datamuse.com_ to get the dictionary definition, The code then does a check to ensure the secret word itself does not appear in the definition, if it does then it is removed.
 
 If you want a more child friendly version of the game there are a number of changes you can do.
-- change the graphics to something like a flower losing it petals
+- change the graphics to something like a flower losing its petals
 - Add or remove words from the _normalWordArray_ variable
 - Increase the number of allowed failed attempts, in *playerChoice* function change the line _if(numberIncorrectGuesses==6)_
 
@@ -127,8 +122,8 @@ This game is known by a number of other names, for example *noughts and crosses*
 
 This is a simple game where the player places their mark in an empty spot in the 3x3 grid. The player or computer who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.
 
-There are actually 4 difficulty levels internally in the game, so if you want to make the game easier for small children you can modify the initial value of _difficulty_ in the code to have a value less than 3.
-It is possible to beat the computer on level 3 difficulty (the default), though it is not easy to do so.
+There are a choice of 3 difficulty levels, though internally there are actually 4 (with difficulty 0 being very easy). The default difficulty (normal) is level 2.
+It is possible to beat the computer on level 3 difficulty (hard), though it is not easy to do so.
 
 I wrote the source code for this game so that it would be easier to follow for people learning JavaScript. While the code is relatively long (at over 850 lines of code) much of this code is simply checking variants of winning line combinations etc. so hopefully intermediate learners of JavaScript would be able to understand how the code works.
 

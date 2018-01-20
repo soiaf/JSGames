@@ -52,14 +52,14 @@ var valid = 0;
 var numOfSquares = 9;
 
 // The game has 4 difficulty levels
-// 0 - simplest level, justs puts in random empty square
+// 0 - simplest level, just puts in random empty square
 // 1 - random, but will complete line if 2 in a row with empty
 // 2 - blocks your lines, tries to win
 // 3 - as with level 2, but focuses on centre and corners - better strategy
 
-// For this code I just set the difficulty to level 3
+// For this code, easy is 1, normal is difficulty 2, hard is level 3
 
-var difficulty = 3;
+var difficulty = 2;
 
 var rndNum = 0;
 var myVal = 0;
@@ -84,6 +84,11 @@ var computerFirstMove = 1;
 var won = 0;
 var lost = 0;
 var draw = 0;
+
+function pickDifficulty(difflevel)
+{	
+	difficulty = difflevel;
+}
 
 function putscore() 
 {
